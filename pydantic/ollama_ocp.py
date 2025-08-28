@@ -25,8 +25,7 @@ agent = Agent(ollama_model)
 #     Code -> returns the output -> LLM
 #     Code <- "natural response" <- LLM
 
-#     MCP, auth/authz
-
+# OpenAI API
 # /chat/completion API -> some tool definition structure
 # /chat/agent API -> some tool definition structure
 

@@ -1,3 +1,22 @@
+## Data Diagram
+
+> The MCP client in this case is the Pydantic SDK.
+
+>     NO MCP
+>     Code -> user prompt with tools embedded in system prompt -> LLM
+>     Code <- call get openshift namespace tool <- LLM
+>     Code executes function
+>     Code -> returns the output -> LLM
+>     Code <- "natural response" <- LLM
+
+>     MCP
+>     Code (mcp client) queries tools from MCP server to inject into prompt
+>     Code -> user prompt with tools embedded in system prompt -> LLM
+>     Code <- please call tool X with parameters Y at endpoint Z <- LLM
+>     Code executes tool call to MCP server
+>     Code -> returns the tool output -> LLM
+>     Code <- "natural response" <- LLM
+
 ## Prerequisite
 
 Create OCP cluster and run `oc login`

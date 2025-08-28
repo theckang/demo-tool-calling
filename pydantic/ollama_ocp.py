@@ -19,16 +19,6 @@ ollama_model = OpenAIModel(
 
 agent = Agent(ollama_model)
 
-#     Code/Pydantic  (Agent) -> user prompt -> LLM
-#     Code/Pydantic (Agent) <- call get openshift namespace tool <- LLM
-#     Code executes 
-#     Code -> returns the output -> LLM
-#     Code <- "natural response" <- LLM
-
-# OpenAI API
-# /chat/completion API -> some tool definition structure
-# /chat/agent API -> some tool definition structure
-
 @agent.tool_plain
 def get_current_time() -> datetime:
     return datetime.now()

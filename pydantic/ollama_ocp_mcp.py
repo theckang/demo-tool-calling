@@ -18,25 +18,6 @@ ollama_model = OpenAIModel(
 server = MCPServerSSE(url=os.environ['MCPServerSSE'])
 agent = Agent(ollama_model, toolsets=[server])
 
-#     NO MCP
-#     Code/Pydantic  (Agent) -> user prompt -> LLM
-#     Code/Pydantic (Agent) <- call get openshift namespace tool <- LLM
-#     Code-OpenShift
-#     Code -> returns the output -> LLM
-#     Code <- "natural response" <- LLM
-
-#     MCP
-#     MCP, auth/authz
-#     > TODO: What is the flow here
-#     Code -> MCP -> LLM
-#     Code -> user prompt -> LLM
-#                MCP-OpenShift <- LLM
-#                MCP-OpenShift -> LLM
-#     Code <- "natural response" <- LLM    
-
-# /chat/completion API -> some tool definition structure
-# /chat/agent API -> some tool definition structure
-
 #@agent.tool_plain
 #def get_current_time() -> datetime:
 #    return datetime.now()

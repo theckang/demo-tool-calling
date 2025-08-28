@@ -45,12 +45,12 @@ Test llama
 
 ```bash
 ollama run llama3.1:8b
-MODEL=llama3.1:8b <PATH_TO_MCP_SERVER>:8080/sse python3 ollama_ocp_mcp.py
+MODEL=llama3.1:8b MCPServerSSE=http://<PATH_TO_MCP_SERVER>:8080/sse python3 ollama_ocp_mcp.py
 ```
 
 Test qwen
 
 ```bash
-ollama run llama3.1:8b
-MODEL=llama3.1:8b <PATH_TO_MCP_SERVER>:8080/sse python3 ollama_ocp_mcp.py
+ollama run qwen3:8b
+MODEL=qwen3:8b MCPServerSSE=http://<PATH_TO_MCP_SERVER>:8080/sse python3 ollama_ocp_mcp.py
 ```

@@ -20,6 +20,13 @@ Set HF token
 export HF_TOKEN=
 ```
 
+Create temp directories
+
+```bash
+mkdir temp && chmod g+rwX temp
+mkdir temp2 && chmod g+rwX temp2
+```
+
 ```bash
 podman run --rm -it \
   --device nvidia.com/gpu=all \
@@ -30,7 +37,7 @@ podman run --rm -it \
   --env "HF_HUB_OFFLINE=0" \
   --env VLLM_NO_USAGE_STATS=1 \
   -v ./temp:/home/vllm:Z \
-  -v ./sample:/tmp/triton:Z \
+  -v ./temp2:/tmp/triton:Z \
   registry.redhat.io/rhaiis/vllm-cuda-rhel9:3.2.1 \
   --model  RedHatAI/Llama-3.2-1B-Instruct-FP8 \
   --trust-remote-code

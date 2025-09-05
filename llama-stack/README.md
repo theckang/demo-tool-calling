@@ -1,5 +1,5 @@
 Three options
 
-1. Local with ollama
-2. Local with Remote vLLM
+1. Local
+2. Local vLLM
 3. OCP

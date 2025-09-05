@@ -52,7 +52,7 @@ session_id = agent.create_session("test-session")
 print(f"Created session_id={session_id} for Agent({agent.agent_id})")
 
 user_prompts = [
-    "What is the weather in Seattle?",
+    "What is the weather in Austin?",
     "What is 40+30"
 ]
 for prompt in user_prompts:

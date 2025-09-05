@@ -2,6 +2,16 @@
 
 Adapted from: https://rh-aiservices-bu.github.io/llama-stack-tutorial
 
+Sync python env
+
+```bash
+pipenv sync
+```
+
+```bash
+pipenv shell
+```
+
 Run model
 
 ```bash
@@ -38,16 +48,6 @@ Register MCP Server as a tool
 
 ```bash
 llama-stack-client toolgroups register --provider-id model-context-protocol --mcp-endpoint "http://localhost:3001/sse" mcp::weather
-```
-
-Sync python env
-
-```bash
-pipenv sync
-```
-
-```bash
-pipenv shell
 ```
 
 Execute llama stack client

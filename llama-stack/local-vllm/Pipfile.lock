@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "54d70ecc891704127ab1a227728202ce22a911ebe428442fa3055d70dad5ba05"
+            "sha256": "9eda99e8a15fa9adb7e0be6f8e2f291cad1579b6a0f134c9bb20c725007681c9"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -246,12 +246,12 @@
         },
         "llama-stack-client": {
             "hashes": [
-                "sha256:40cc14ec9ad37969249d972abd681c925f3d4866fc4fa75a016ef1fe87cc7a40",
-                "sha256:80b95d136b9a6e39a859578ad7d9536662c564d7f6483e45b010708608e4768d"
+                "sha256:20eca8fc6f6c2e3f7a20fa2cf45782a3c5dc20d430746d563de4966af6cd42e9",
+                "sha256:529c24e17d3f2d57abc619c88b9989bf2a96dc1c90c3a80c5361e25a798e7729"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.7'",
-            "version": "==0.2.8"
+            "version": "==0.2.9"
         },
         "markdown-it-py": {
             "hashes": [

@@ -6,7 +6,7 @@ base_url = "http://localhost:8321"
 client = LlamaStackClient(
     base_url=base_url
 )
-model = "llama3.1:8b"
+model = "RedHatAI/Llama-3.1-8B-Instruct"
 
 # System prompt configures the assistant behavior
 sys_prompt = """You are a helpful assistant. Use tools to answer. When you use a tool always respond with a summary of the result."""
